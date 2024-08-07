@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mavlinkcamera>
+    <definition version="25"> 
+        <model>ILX-LR1</model>
+        <vendor>Sony</vendor>
+    </definition>
+    <parameters>
+        <parameter name="CAM_MODE" type="int32" default="0" control="0">
+            <description>Camera Mode</description>
+            <options>
+                <option name="Photo" value="0" />
+                <option name="Video" value="1" />
+            </options>
+        </parameter>
+        <parameter name="CAM_ISO" type="int32" default="200">
+        <description>ISO</description>
+        <options>
+           <option name="AUTO" value="16777215" />
+                <option name="50" value="268435506" />
+                <option name="64" value="268435520" />
+                <option name="80" value="268435536" />
+                <option name="100" value="100" />
+                <option name="125" value="125" />
+                <option name="160" value="160" />
+                <option name="200" value="200" />
+                <option name="250" value="250" />
+                <option name="320" value="320" />
+                <option name="400" value="400" />
+                <option name="500" value="500" />
+                <option name="640" value="640" />
+                <option name="800" value="800" />
+                <option name="1000" value="1000" />
+                <option name="1250" value="1250" />
+                <option name="1600" value="1600" />
+                <option name="2000" value="2000" />
+                <option name="2500" value="2500" />
+                <option name="3200" value="3200" />
+                <option name="4000" value="4000" />
+                <option name="5000" value="5000" />
+                <option name="6400" value="6400" />
+                <option name="8000" value="8000" />
+                <option name="10000" value="10000" />
+                <option name="12800" value="12800" />
+                <option name="16000" value="16000" />
+                <option name="20000" value="20000" />
+                <option name="25600" value="25600" />
+                <option name="32000" value="32000" />
+            </options>
+        </parameter>
+        <parameter name="CAM_APERTURE" type="float" default="5.6">
+            <description>Aperture</description>
+            <options>
+                <option name="f2.8" value="2.8" />
+                <option name="f3.2" value="3.2" />
+                <option name="f3.5" value="3.5" />
+                <option name="f4.0" value="4.0" />
+                <option name="f4.5" value="4.5" />
+                <option name="f5.0" value="5.0" />
+                <option name="f5.6" value="5.6" />
+                <option name="f6.3" value="6.3" />
+                <option name="f7.1" value="7.1" />
+                <option name="f8" value="8.0" />
+                <option name="f9" value="9.0" />
+                <option name="f10" value="10.0" />
+                <option name="f11" value="11.0" />
+                <option name="f12" value="12.0" />
+                <option name="f14" value="14.0" />
+                <option name="f16" value="16.0" />
+                <option name="f18" value="18.0" />
+                <option name="f20" value="20.0" />
+                <option name="f22" value="22.0" />
+            </options>
+        </parameter>
+        <parameter name="CAM_SHUTTERSPD" type="int32" default="1000">
+            <description>Shutter Speed</description>
+            <options>
+                <option name="1/4000" value="69536" />
+                <option name="1/3200" value="68736" />
+                <option name="1/2500" value="68036" />
+                <option name="1/2000" value="67536" />
+                <option name="1/1600" value="67136" />
+                <option name="1/1250" value="66786" />
+                <option name="1/1000" value="66536" />
+                <option name="1/800" value="66336" />
+                <option name="1/640" value="66176" />
+                <option name="1/500" value="66036" />
+                <option name="1/400" value="65936" />
+                <option name="1/320" value="65856" />
+                <option name="1/250" value="65786" />
+                <option name="1/200" value="65736" />
+                <option name="1/160" value="65696" />
+                <option name="1/125" value="65661" />
+                <option name="1/100" value="65636" />
+                <option name="1/80" value="65616" />
+                <option name="1/60" value="65596" />
+                <option name="1/50" value="65586" />
+                <option name="1/40" value="65576" />
+                <option name="1/30" value="65566" />
+                <option name="1/25" value="65561" />
+                <option name="1/20" value="65556" />
+                <option name="1/15" value="65551" />
+                <option name="1/13" value="65549" />
+                <option name="1/10" value="65546" />
+                <option name="1/8" value="65544" />
+                <option name="1/6" value="65542" />
+                <option name="1/5" value="65541" />
+                <option name="1/4" value="65540" />
+                <option name="1/3" value="65539" />
+                <option name="0.4s" value="262154" />
+                <option name="0.5s" value="327690" />
+                <option name="0.6s" value="393226" />
+                <option name="0.8s" value="524298" />
+                <option name="1s" value="655370" />
+            </options>
+        </parameter>
+        <parameter name="FOCUS_MODE" type="int32" default="1">
+            <description>Focus Mode</description>
+            <updates>
+                <update>FOCUS_AREA</update>
+            </updates>
+            <options default="0">
+                <option name="MF" value="1">
+                    <exclusions>
+                        <exclude>FOCUS_AREA</exclude>
+                    </exclusions>
+                </option>
+                <option name="AF_S" value="2" />
+                <option name="AF_A" value="4" />
+                <option name="AF_C" value="3" />
+                <option name="DMF" value="6" />
+            </options>
+        </parameter>
+        <parameter name="FOCUS_AREA" type="int32" default="3">
+            <description>Focus Area</description>
+            <options>
+                <option name="Wide Focus Area" value="1" />
+                <option name="Zone Focus Area" value="2" />
+                <option name="Center Focus Area" value="3" />
+                <option name="Flexible Spot L Focus Area" value="6" />
+                <option name="Flexible Spot M Focus Area" value="5" />
+                <option name="Flexible Spot S Focus Area" value="4" />
+                <option name="Expand Flexible Spot Focus Area" value="7" />
+            </options>
+        </parameter>
+        <parameter name="FILE_FORMAT" type="int32" default="3">
+            <description>File Format</description>
+            <options>
+                <option name="RAW" value="2" />
+                <option name="RAW+JPEG" value="3" />
+                <option name="JPEG" value="1" />
+            </options>
+        </parameter>
+        <parameter name="EXP_PROG" type="int32" default="4">
+            <description>Exposure Program</description>
+            <updates>
+                <update>CAM_SHUTTERSPD</update>
+                <update>CAM_APERTURE</update>
+            </updates>
+            <options>
+                <option name="Auto" value="32768" >
+                    <exclusions>
+                        <exclude>CAM_APERTURE</exclude>
+                        <exclude>CAM_SHUTTERSPD</exclude>
+                    </exclusions>
+		</option>
+                <option name="Aperture Priority" value="3" >
+                    <exclusions>
+                        <exclude>CAM_SHUTTERSPD</exclude>
+                    </exclusions>
+		</option>
+                <option name="Shutter Priority" value="4" >
+                    <exclusions>
+                        <exclude>CAM_APERTURE</exclude>
+                    </exclusions>
+		</option>
+                <option name="Manual" value="1" />
+            </options>
+        </parameter>
+    </parameters>
+</mavlinkcamera>
+
