@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mavlinkcamera>
-    <definition version="1"> 
+    <definition version="2"> 
         <model>ILCE-7RM4</model>
         <vendor>Sony</vendor>
     </definition>
@@ -157,20 +157,23 @@
                 <update>CAM_APERTURE</update>
             </updates>
             <options>
-                <option name="Auto" value="0" />
+                <option name="Auto" value="32768" >
                     <exclusions>
                         <exclude>CAM_APERTURE</exclude>
                         <exclude>CAM_SHUTTERSPD</exclude>
                     </exclusions>
-                <option name="Aperture Priority" value="2" />
-                    <exclusions>
-                        <exclude>CAM_APERTURE</exclude>
-                    </exclusions>
-                <option name="Shutter Priority" value="3" />
+		</option>
+                <option name="Aperture Priority" value="3" >
                     <exclusions>
                         <exclude>CAM_SHUTTERSPD</exclude>
                     </exclusions>
-                <option name="Manual" value="4" />
+		</option>
+                <option name="Shutter Priority" value="4" >
+                    <exclusions>
+                        <exclude>CAM_APERTURE</exclude>
+                    </exclusions>
+		</option>
+                <option name="Manual" value="1" />
             </options>
         </parameter>
     </parameters>
