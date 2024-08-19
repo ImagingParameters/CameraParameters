@@ -176,8 +176,8 @@
                 <option name="Manual" value="1" />
             </options>
         </parameter>
-	<parameter name="Image Destination" type="int32" default="2">
-            <description>File Format</description>
+	<parameter name="IMG_DEST" type="int32" default="2">
+            <description>Image Destination</description>
             <options>
                 <option name="Destination Only" value="1" />
                 <option name="Dest.+Camera" value="3" />
