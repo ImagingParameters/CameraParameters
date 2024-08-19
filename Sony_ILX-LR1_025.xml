@@ -155,12 +155,14 @@
             <updates>
                 <update>CAM_SHUTTERSPD</update>
                 <update>CAM_APERTURE</update>
+		<update>CAM_ISO</update>
             </updates>
             <options>
                 <option name="Auto" value="32768" >
                     <exclusions>
                         <exclude>CAM_APERTURE</exclude>
                         <exclude>CAM_SHUTTERSPD</exclude>
+			<exclude>CAM_ISO</exclude>
                     </exclusions>
 		</option>
                 <option name="Aperture Priority" value="3" >
